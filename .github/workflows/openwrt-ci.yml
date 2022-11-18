@@ -60,6 +60,9 @@ jobs:
 
       - name: Update feeds
         run: |
+          cd ..
+          sudo chmod 777 openwrt/
+          cd openwrt/
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           git clone https://github.com/sfx2000/luci-proto-modemmanager.git
