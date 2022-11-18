@@ -62,8 +62,8 @@ jobs:
         run: |
           cd ..
           pwd
-          sudo chmod 777 openwrt/
-          cd openwrt/
+          sudo chmod 777 openwrt18.06/
+          cd openwrt18.06/
           ./scripts/feeds update -a
           ./scripts/feeds install -a
           git clone https://github.com/sfx2000/luci-proto-modemmanager.git
